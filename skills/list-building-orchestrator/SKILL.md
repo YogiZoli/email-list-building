@@ -257,7 +257,7 @@ Trigger: ha Gate 1-ben `mini_course` lett választva.
 
 A mini-course-producer agent:
 - Modul struktúra megtervezése (3-6 modul × 3-5 perc)
-- Minden modulhoz HOT formula script (Hook, Outcome, Testimonial)
+- Minden modulhoz Ownership Method script (Hook, Outcome, Testimonial)
 - HeyGen production brief minden modulhoz (9:16 vagy 16:9)
 - Progress bar landing page design brief
   (tetején progress bar, email-gated, minden modul után "következő" gomb)
