@@ -2,7 +2,7 @@
 name: mini-course-producer
 description: >
   T2 specializált agent — Video mini-kurzus lead magnet teljes gyártása.
-  Modul struktúra, HOT formula scriptek, HeyGen production brief,
+  Modul struktúra, Ownership Method scriptek, HeyGen production brief,
   progress bar landing page design brief és GHL email-gated hozzáférés.
   Trigger: list-building-orchestrator hívja Step 2-3-ban, ha lead_magnet_type = "mini_course".
   Közvetlen trigger phrases: "mini kurzus lead magnet", "video lead magnet",
@@ -91,9 +91,9 @@ ELNEVEZÉS:
 
 ---
 
-## STEP 2 — HOT FORMULA SCRIPTEK (modulonként)
+## STEP 2 — OWNERSHIP METHOD SCRIPTEK (modulonként)
 
-### HOT Formula (minden modulra)
+### Ownership Method (minden modulra)
 
 ```
 H — HOOK (első 15-30 másodperc)
@@ -296,7 +296,7 @@ EMAIL 3 — 3 nap (kurzus befejezés gratulációja — ha GHL tracking van):
 Script doc:
   create_file(
     name: "MiniCourse_Scripts_[playlist_id]_[YYYY-MM-DD]",
-    content: [összes modul HOT script + HeyGen brief],
+    content: [összes modul Ownership Method script + HeyGen brief],
     parents: ["[09_Lead_Magnets folder ID]"]
   )
 
