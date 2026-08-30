@@ -16,6 +16,11 @@ description: >
 **Alapelv:** Egyetlen output számít igazán: egy élő opt-in URL, ami átmegy T1-nek és T3-nak.
 **Token-stratégia:** Egyetlen state fájlt olvas. Az Avatar Cardot és a Style Guide-ot
 csak a copy és design lépések töltik be — semmilyen más lépésnél nem szükséges.
+**Brand kánon:** BRAND-GUIDE.md, gép-értékek tokens.css (git@github.com:YogiZoli/design-system.git,
+helyi: C:/Users/gdp/projects/design-system). Ez felülírja a Drive-ról betöltött style guide-ot,
+ha eltér. v2 gyors-értékek: Open Sans font (base 18px), primary CTA green `#0E8542` fehér
+szöveggel, secondary azure `#1663C6`, brand azure `#1E7CE8`, háttér `#F6F8FC`, surface `#FFFFFF`,
+body `#1E2733`, border `#E0E6F0`, PDF H1 `#144F9F`. Minden gomb tömör szín, fehér szöveg, min 4.5:1.
 **Jelenlegi fázis:** PDF lead magnet (Phase 1). Mini-course és Survey = Phase 2/3.
 
 ---
@@ -307,8 +312,9 @@ nem kell külön integráció — T3 olvassa a GHL tag performance-ot.
    Méret: A4 (210×297mm) vagy 8.5×11in
    Cím: [jóváhagyott cím]
    Szerző: Zoltan Gero
-   Vizuális irány: [brand színek] + [1 fő vizuális elem leírása]
-   Betűtípus: [style guide alapján]
+   Vizuális irány: brand v2 (BRAND-GUIDE.md): PDF cover háttér `#0E2038` vagy `#FFFFFF`,
+     H1 `#144F9F`, CTA blokk green `#0E8542` fehér szöveggel, azure `#1663C6` vonalak + [1 fő vizuális elem]
+   Betűtípus: Open Sans (H1 700, body 400), lásd tokens.css
    Hangulatszavak: [3 jelző]
 
 2. PDF BELSŐ OLDALAK SABLON:
@@ -320,8 +326,8 @@ nem kell külön integráció — T3 olvassa a GHL tag performance-ot.
 3. OPT-IN LANDING PAGE HERO SZEKCIÓ BRIEF:
    Headline vizuálisan kiemelve
    Lead magnet mockup (cover kép)
-   CTA gomb: [szín, méret, szöveg]
-   Background: [brand guideline]
+   CTA gomb: green `#0E8542` tömör, fehér szöveg, min 4.5:1, [méret, szöveg]
+   Background: `#F6F8FC` (brand v2, BRAND-GUIDE.md)
 
 4. THANK YOU PAGE BRIEF:
    Egyszerű, megnyugtató design
@@ -329,7 +335,9 @@ nem kell külön integráció — T3 olvassa a GHL tag performance-ot.
 ```
 
 **Style Guide betöltés (ha még nem töltődött be Step 2-ben):**
-Csak a color palette és typography részt — max 30 sor.
+Elsődleges forrás: tokens.css + BRAND-GUIDE.md (git@github.com:YogiZoli/design-system.git).
+A Drive style guide csak kiegészítés, ütközésnél a repo kánon nyer. Csak a color palette és
+typography részt — max 30 sor.
 
 **Output Zoltannak (GATE 3):**
 ```

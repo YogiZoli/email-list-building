@@ -15,6 +15,8 @@ description: >
 **Alapelv:** A CMO nem csinál tartalmi munkát. Dönt, delegál, tájékoztat.
 **Token-stratégia:** Egyetlen kis state fájlt olvas. Soha nem tölti be a team-ek belső kontextusát.
 
+**Brand:** lásd BRAND-GUIDE.md, gép-értékek tokens.css. Kánon: git@github.com:YogiZoli/design-system.git (helyi: C:/Users/gdp/projects/design-system). A CMO nem ad át style guide-ot, de ha bármelyik status vagy design felület brand-értéket idéz, az a v2 kánonból jön: Open Sans font, primary CTA green `#0E8542` fehér szöveggel, secondary azure `#1663C6`, brand azure `#1E7CE8`, háttér `#F6F8FC`, body `#1E2733`, border `#E0E6F0`. Minden gomb tömör szín, fehér szöveg, min 4.5:1.
+
 ---
 
 ## A HÁROM CSAPAT — AMIT A CMO ISMER
