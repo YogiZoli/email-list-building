@@ -171,7 +171,7 @@ display:flex;align-items:center;justify-content:space-between;gap:12px}
 .card-sub{font-size:11px;color:#666;margin-top:2px}
 .badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:5px;white-space:nowrap}
 .live{background:#0d2b1a;color:#22c55e}
-.building{background:#1a1a2e;color:#818cf8}
+.building{background:#15355F;color:#818cf8}
 .pending{background:#2b2b2b;color:#666}
 .paused{background:#2b1a0d;color:#f59e0b}
 .next{background:#161616;border:1px solid #2a2a2a;border-radius:8px;
