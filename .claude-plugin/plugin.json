@@ -1,7 +1,7 @@
 {
   "name": "email-list-building",
-  "version": "1.0.0",
-  "description": "T2 Email List Building AI Agent Team + CMO Orchestrator. Builds lead magnets (PDF, mini-course, survey), sets up GHL landing pages and automations, returns opt-in URL to the YouTube Flywheel team, and hands campaign briefs to the Campaign team. Includes top-level CMO Orchestrator that coordinates all 3 marketing teams end-to-end.",
+  "version": "1.1.0",
+  "description": "T2 Email List Building AI Agent Team + CMO Orchestrator. Builds lead magnets (PDF, mini-course, survey), sets up the landing page and automations (GHL by default, swappable), returns opt-in URL to the YouTube Flywheel team via the platform-agnostic optin_registry.json contract, and hands campaign briefs to the Campaign team. Includes the top-level CMO Orchestrator that coordinates all 3 marketing teams end-to-end.",
   "author": {
     "name": "Zoltan Gero",
     "email": "humorketing@gmail.com"
