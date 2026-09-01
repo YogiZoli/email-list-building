@@ -20,9 +20,15 @@ Never loads full agent context — only reads small state files.
 
 ## T2 Team Role
 Receives playlist_brief.json from T1 (YouTube team).
-Produces: lead magnet content → design brief → GHL landing page → opt-in URL.
+Produces: lead magnet content → design brief → landing page → opt-in URL.
 Writes opt-in URL to optin_registry.json (T1 reads this for video descriptions).
 Writes campaign_brief.json (T3 Campaign team reads this).
+
+## Platform-agnostic contract
+The handoff files carry platform-neutral fields: `opt_in_url`, `entry_tag`, `lead_magnet_type`,
+`lead_magnet_title`. A `platform` field (default `gohighlevel`) names the tool T2 used; any
+platform-specific IDs go under `platform_meta`, read only by T2/T3, never T1. Swapping GHL for
+another tool means changing T2's internals + `platform`, nothing in T1.
 
 ## Lead Magnet Types
 - Phase 1 (NOW ACTIVE): PDF lead magnet

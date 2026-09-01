@@ -445,16 +445,23 @@ Helye: [Channel Drive folder] → kereshető playlist_id alapján
 Tartalom (append — ne írj felül meglévő bejegyzéseket):
 {
   "playlist_id": "[playlist_id]",
-  "opt_in_url": "[GHL landing page URL]",
+  "opt_in_url": "[landing page URL]",
   "lead_magnet_type": "pdf",
   "lead_magnet_title": "[cím]",
-  "ghl_entry_tag": "lm-[slug]",
-  "landing_page_ghl_id": "[GHL page ID]",
+  "entry_tag": "lm-[slug]",
+  "platform": "gohighlevel",
+  "platform_meta": { "landing_page_id": "[platform-specifikus oldal ID]" },
   "confirmed_date": "[YYYY-MM-DD]"
 }
 ```
 
-T1 video-production-orchestrator ezt olvassa, és automatikusan beilleszti
+**Platform-agnosztikus szerződés.** A felső szintű mezők (`opt_in_url`, `entry_tag`,
+`lead_magnet_type`, `lead_magnet_title`) platform-függetlenek — T1 CSAK ezeket olvassa (a leírás
+CTA-hoz az `opt_in_url` kell). A `platform` alapértéke `gohighlevel`; más eszköznél írd át
+(`"convertkit"`, `"systeme"`, `"custom"`, ...). A `platform_meta` minden platform-specifikus
+azonosítót itt tart (GHL: `landing_page_id`, esetleg `workflow_id`) — csak T2 és T3 olvassa.
+
+T1 video-production-orchestrator az `opt_in_url`-t olvassa és automatikusan beilleszti
 a YouTube videó leírásokba. Nincs szükség manuális koordinációra.
 
 ### 5b. campaign_brief.json írása (T3-nak)
@@ -468,8 +475,9 @@ Tartalom:
   "lead_magnet_title": "[cím]",
   "lead_magnet_topic": "[téma 1-2 mondatban]",
   "lead_magnet_type": "pdf",
-  "ghl_entry_tag": "lm-[slug]",
-  "entry_workflow_id": "[GHL workflow ID]",
+  "entry_tag": "lm-[slug]",
+  "platform": "gohighlevel",
+  "entry_workflow_id": "[automation platform workflow ID]",
   "avatar_segment": "[melyik avatar szegmens — playlist_brief-ből]",
   "recommended_campaign": "survey_then_plf",
   "ask_bucket": null
